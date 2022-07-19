@@ -1,0 +1,59 @@
+:root {
+    --font:'Barlow', sans-serif;
+    --fontD:'Fraunces', serif;
+    /* Primary */
+    --softRed: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --text: hsl(167, 40%, 24%);
+    --photographyText: hsl(198, 62%, 26%);
+    --footer: hsl(168, 34%, 41%);
+    /* Neutral */
+    
+    --desaturatedBlue: hsl(212, 27%, 19%);
+    --veryDarkGrayishBlue: hsl(213, 9%, 39%);
+    --darkGrayishBlue: hsl(232, 10%, 55%);
+    --grayishBlue: hsl(210, 4%, 67%);
+    --white:#fff;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--font);
+    font-size: 1.8rem;
+}
+/* Global */
+.container {
+    width: min(90%, 120rem);
+    margin: 15rem auto;
+}
+h1 {
+    font-size: 8.8rem;
+    font-weight: normal;
+}
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+/* Utility */
+.center-text {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+/* Body */
+
