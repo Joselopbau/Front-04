@@ -29,11 +29,13 @@ body {
 /* Global */
 .container {
     width: min(90%, 120rem);
-    margin: 15rem auto;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
 }
 h1 {
     font-size: 8.8rem;
-    font-weight: normal;
 }
 h2 {
     font-size: 4rem;
@@ -52,8 +54,61 @@ img {
 .center-text {
     text-align: center;
 }
-.no-margin {
+.not-margin {
     margin: 0;
 }
-/* Body */
-
+/* Header */
+.header {
+    background-image: url(../img/desktop/image-header.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 2rem;
+}
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+.bar-text {
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    font-size: 2.5rem;
+}
+.links {
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+}
+.links a {
+    color: var(--white);
+    font-weight: 400;
+}
+.links .buttom {
+    color: var(--desaturatedBlue);
+    font-family: var(--fontD);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+}
+.bar__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0;
+    row-gap: 8rem;
+}
+.header-text {
+    color: var(--white);
+    font-family: var(--fontD);
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+}
