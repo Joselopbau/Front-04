@@ -112,3 +112,97 @@ img {
     font-weight: 700;
     letter-spacing: 1rem;
 }
+/* Main */
+.information {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+    .information {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.information__text {
+    padding: 15rem;
+}
+.information__text p {
+    color: var(--darkGrayishBlue);
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+.buttom-1,
+.buttom-2 {
+    font-family: var(--fontD);
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.buttom-1 {
+    
+    text-decoration: underline 4px var(--yellow);
+}
+.buttom-2 {
+    text-decoration: underline  4px var(--softRed);
+}
+.information__text-title {
+    font-family: var(--fontD);
+    color: var(--desaturatedBlue);
+    font-weight: 700;
+}
+.information__image-1 {
+    height: 60rem;
+    background-image: url(../img/desktop/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.information__image-2 {
+    height: 60rem;
+    background-image: url(../img/desktop/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.information__image-text-1 {
+    height: 60rem;
+    background-image: url(../img/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.information__image-text-2 {
+    height: 60rem;
+    background-image: url(../img/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.image__text {
+    padding:0 10rem 4rem 10rem;
+    text-align: center;
+}
+.image__title1 {
+    font-family: var(--fontD);
+    color: var(--text);
+}
+.image__p1 {
+    margin: 0 5rem;
+    color: var(--text);
+    font-weight: 500;
+    line-height: 2.7rem;
+}
+.image__title2 {
+    font-family: var(--fontD);
+    color: var(--photographyText);
+}
+.image__p2 {
+    margin: 0 5rem;
+    color: var(--photographyText);
+    font-weight: 500;
+    line-height: 2.7rem;
+    padding-bottom: .5rem;
+}
