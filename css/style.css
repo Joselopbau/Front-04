@@ -49,6 +49,7 @@ h4 {
 }
 img {
     max-width: 100%;
+    height: auto;
 }
 /* Utility */
 .center-text {
@@ -59,24 +60,44 @@ img {
 }
 /* Header */
 .header {
-    background-image: url(../img/desktop/image-header.jpg);
-    height: 60rem;
+    background-image: url(../img/mobile/image-header.jpg);
+    height: 90rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-top: 2rem;
+}
+@media (min-width: 768px) {
+    .header {
+        background-image: url(../img/desktop/image-header.jpg);
+        height: 60rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 2rem;
+    }
 }
 .bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 3rem;
+    padding-top: 3rem;
+}
+@media (min-width: 768px) {
+    .bar {
+        padding-top:0;
+    }
 }
 .bar-text {
     color: var(--white);
     font-weight: 700;
     letter-spacing: -0.1rem;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+}
+@media (min-width: 768px) {
+    .bar-text {
+        font-size: 2.5rem;
+    }
 }
 .links {
     display: flex;
@@ -101,16 +122,41 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7rem 0;
-    row-gap: 8rem;
+    padding: 19rem 0;
+    row-gap: 15rem;
+
+}
+.bar__image svg {
+    transform: scale(1.4);
+}
+@media (min-width: 768px) {
+    .bar__image svg {
+    transform: scale(1);
+    }
+}
+@media (min-width: 768px) {
+    .bar__image {
+        justify-content: center;
+        align-items: center;
+        padding: 7rem 0;
+        row-gap: 8rem;
+    }
 }
 .header-text {
     color: var(--white);
     font-family: var(--fontD);
-    text-transform: uppercase;
-    font-size: 4rem;
+    text-transform: uppercase; 
+    text-align: center;
+    font-size: 5.5rem;
     font-weight: 700;
     letter-spacing: 1rem;
+}
+@media (min-width: 768px ) {
+    .header-text {
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+    }   
 }
 /* Main */
 .information {
@@ -152,10 +198,16 @@ img {
     font-weight: 700;
 }
 .information__image-1 {
-    height: 60rem;
-    background-image: url(../img/desktop/image-transform.jpg);
+    height: 50rem;
+    background-image: url(../img/mobile/image-transform.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media (min-width: 768px ) {
+    .information__image-1 {
+        height: auto;
+        background-image: url(../img/desktop/image-transform.jpg);
+    }
 }
 .information__image-2 {
     height: 60rem;
