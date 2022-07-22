@@ -4,9 +4,9 @@
     /* Primary */
     --softRed: hsl(7, 99%, 70%);
     --yellow: hsl(51, 100%, 49%);
-    --text: hsl(167, 40%, 24%);
+    --text: hsl(167, 39%, 29%);
     --photographyText: hsl(198, 62%, 26%);
-    --footer: hsl(168, 34%, 41%);
+    --footer: hsl(168, 54%, 70%);
     /* Neutral */
     
     --desaturatedBlue: hsl(212, 27%, 19%);
@@ -408,4 +408,71 @@ img {
     color: var(--grayishBlue);
     font-weight: 700;
     font-size: 1.6rem;
+}
+.galery {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
+/* @media (min-width: 768px) {
+    .galery {
+    }
+} */
+.galery__image1 {
+    background-image: url(../img/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-size: 35rem;
+    height: 43.5rem;
+    width: 40rem;
+
+}
+.galery__image2 {
+    background-image: url(../img/desktop/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-size: 35rem;
+    height: 43.5rem;
+    width: 40rem;
+}
+.galery__image3 {
+    background-image: url(../img/desktop/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-size: 35rem;
+    height: 43.5rem;
+    width: 40rem;
+}
+.galery__image4 {
+    background-image: url(../img/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    background-size: 35rem;
+    height: 43.5rem;
+    width: 40rem;
+}
+
+.footer {
+    background-color: var(--footer);
+    padding: 10rem 0 5rem 0;
+}
+.footer h4 {
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: var(--text);
+}
+.footer nav {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 7rem;
+}
+.footer a {
+    font-size: 1.7rem;
+    color: var(--text);
+}
+.icons {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+.icons svg {
+    transform: scale(.7);
 }
